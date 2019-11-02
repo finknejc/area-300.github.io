@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+ 
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="style.css">
+    
+<title></title>
+       
+  
+  </head>
+ 
+<body>
+    
+    <div class="slidemenu">
+        <ul>
+            <li><a class="menuitem" href="index.html">intro</a></li>
+            <li><a class="menuitem inactive">programme</a></li>
+            <li><a class="menuitem active" href="podcast.html">podcast</a></li>
+            <li><a class="menuitem" href="blog.html">blog</a></li>
+        </ul>
+    </div>
+      
+        <section class="header">
+                <a href="index.html"><img class="logo" src="images/Logo.svg"></a>
+                
+                <div class="menu">
+                        <span></span>
+                        <span></span>
+                </div>
+        
+        </section>
+        
+    
+       
+    <section class="parallaxSection"> 
+    
+        <div data-paroller-factor="-0.4">
+        <img class="sky" src="images/podcastcoverSky.png">
+        </div>
+    
+        
+        <div data-paroller-factor="-0.8">
+        <h2 class="podcastTitleBehind">
+                                <span class="podcastSpecialPositionBehind">ar</span>ea <br/>
+                                 <span class="podcastNumberBehind">
+                                <span class="podcastSpecialPositionBehind">30</span>0
+                                </span>the<br/>pdcst
+        </h2>    
+        </div> 
+    
+     
+    
+        <div data-paroller-factor="-0.5">
+        <img class="roof" src="images/podcastcoverRoof.png">
+        </div>
+        
+        <div data-paroller-factor="-0.8">
+        <h2 class="podcastTitleInfront">
+                                <span class="podcastSpecialPositionInfront">ar</span>ea <br/>
+                                 <span class="podcastNumberInfront">
+                                <span class="podcastSpecialPositionInfront">30</span>0
+                                </span>the<br/>pdcst
+        </h2>
+        </div>
+    
+        <div data-paroller-factor="-0.3">
+        <img class="ground" src="images/podcastcoverGround.png">
+         <p class="parallaxtext">Is a conversation based show with enterpreneurs, creative minds, doers, makers and just crazy awesome people.</p>
+        </div>
+        
+    </section>   
+    
+       
+        
+    
+        <div data-paroller-factor="-0.3">
+        <div class="podcastArea">
+            
+            <section class="podcasts">
+            
+            <a href="podcastSection1.html">
+                <div class="podcastPost">    
+                    <h4 class="podcastDate">23.September</h4>
+                    <h2 class="podcastTitle">Episode 01 - Challenge yourself with Glen Weston</h2>
+                    <h3 class="podcastDescription">Today we sat down with creative director of Wunderman, Glenn Weston.</h3>
+                    <div class="podcastArrow"></div>
+                    </div> 
+              </a>  
+                
+            <a href="podcastSection2.html"> 
+                <div class="podcastPost">    
+                    <h4 class="podcastDate">20.October</h4>
+                    <h2 class="podcastTitle">Episode 02 - Christian Klintholm</h2>
+                    <h3 class="podcastDescription">For the second episode of the podcasts we discussed all things art.</h3>
+                    <div class="podcastArrow"></div>
+                    </div> 
+                </a>
+                
+                
+                
+                
+                
+                   
+                
+            </section>
+            
+            
+            
+            
+        
+        </div>
+    </div>
+        
+    
+   
+            
+        
+                
+    
+    
+    
+    
+
+        <script src="jquery-3.1.1.js"></script>
+        <script src="dist/jquery.paroller.min.js"></script>
+    
+        <script src="animation.js"></script>
+
+
+        <script text="text/javascript">
+            $(window).on('load resize',function(){
+        if($(window).width() > 850){
+            //window.location = "./mobile-website/index.html";
+            window.location = "../podcast.html";
+            return;
+        }
+    });
+
+        </script>
+
+
+</body>
+
+
+</html>

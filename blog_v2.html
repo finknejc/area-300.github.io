@@ -158,20 +158,24 @@
 
 
 
-        
-  <script type="text/javascript">
-  
-  if (screen.width <= 1200) {
-    window.location = "http://www.area300.dk/mobile/blog.html";
-  }
-
-</script>          
+   
         
         
         
         
         <script src="jquery-3.1.1.js"></script>
         <script src="animation.js"></script>
+
+
+        <script text="text/javascript">
+            $(window).on('load resize',function(){
+        if($(window).width() < 850){
+            //window.location = "./mobile-website/index.html";
+            window.location = "mobile-website/blog.html";
+            return;
+        }
+    });
+</script>
 
 </body>
 

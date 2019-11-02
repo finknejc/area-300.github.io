@@ -1,0 +1,560 @@
+@font-face{
+    font-family: Gt-PressuraBold;
+    src: url(font/GT-Pressura-Mono-Bold.otf)
+}
+@font-face{
+    font-family: Gt-PressuraRegular;
+    src: url(font/GT-Pressura-Mono-Regular.otf);
+}
+@font-face{
+    font-family: Ailerons;
+    src: url(font/Ailerons.otf);
+}
+@font-face{
+    font-family: Butler;
+    src: url(font/Butler_Regular.otf);
+}
+body{
+    margin: 0;
+    background-color: #151515;
+    
+}
+.header{
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #151515;
+    position: fixed;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.8);
+    z-index: 6;
+    
+
+}
+
+.logo{
+    height: 20px;
+    width: 25px;
+    float: left;
+    margin: 20px;
+}
+/*---------------------FORM--------------------------------------------*/
+.clear{
+    text-align: center;
+}
+.mc-field-group{
+    text-align: center;
+}
+input[type=submit] {
+    
+    border: 0;
+    border-radius: 2px;
+    background-color: white;
+    color: rgba(0,0,0,0.9);
+    height: 42px;	width: 85vw;
+    margin: 8px auto ;
+    text-transform: uppercase;
+    font-family: Gt-PressuraBold;
+}
+input[type=email] {
+    padding-left: 5vw;
+    margin: 8px auto ;	height: 36px;	width: 80vw;	border: 1px solid #FFFFFF;
+background-color: transparent;
+color: #FFFFFF;	font-family: Gt-PressuraBold;	font-size: 16px;	font-weight: bold;	letter-spacing: 3px;	line-height: 16px;}
+input[type=text] {
+    padding-left: 5vw;
+    margin: 8px auto ; height: 36px;	width: 80vw;	border: 1px solid #FFFFFF;
+background-color: transparent;
+color: #FFFFFF;	font-family: Gt-PressuraBold;	font-size: 16px;	font-weight: bold;	letter-spacing: 3px;	line-height: 16px;}
+input:focus {
+   
+    border-color:#D0333A;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px #d0333a;
+    outline: 0 none;
+   
+}
+
+/*         menu animation           */
+.slidemenu{
+    padding-top: 20vh;
+    position: fixed;
+    
+    width: 75vw;
+    height: 100vh;
+    right: 0;
+    background-color: #151515;
+    text-align: center;
+    box-shadow: 0 3px 50px 0 rgba(0,0,0,0.8);
+    font-family: Gt-PressuraBold;
+    z-index: 5;
+    display: none;
+    
+}
+.menuitem{
+    
+    width: 100%;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    
+}
+.menuitem:active{
+  color: #D0333A;  
+}
+.menuitem:hover{
+  color: #D0333A;  
+}
+.active{
+    color: #D0333A;
+}
+.inactive{
+    color: rgba(255,255,255,0.35);
+    text-decoration: line-through;
+}
+.slidemenu li{ list-style-type: none;margin-top: 15px;}
+.menu {
+  width: 25px;
+  height: 20px;
+  float: right;
+  margin-top: 24px;
+  margin-right: 24px;
+
+  transform: rotate(0deg);
+ 
+  transition: .5s ease-in-out;
+ 
+}
+
+.menu span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  opacity: 1;
+  transform: rotate(0deg);
+  
+  transition: .25s ease-in-out;
+}
+
+
+.menu span:nth-child(1) {
+  margin-left: 5px;
+  top: 0px;
+  transform-origin: left center;
+}
+
+
+.menu span:nth-child(2) {
+  top: 8px;
+  
+  transform-origin: left center;
+}
+
+.menu.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 3px;
+  
+}
+
+
+
+.menu.open span:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 15px;
+  left: 8px;
+}
+
+/*         menu animation           */
+.introText{
+    color: white;
+    transition: .4s ease-in-out;
+    
+    padding: 25px;
+}
+.fadeIntrotext{
+    opacity: 0.5;
+}
+.theEvent{
+    font-family: Ailerons;
+    font-size: 32px;	
+    line-height: 38px;
+    margin-top: 80px;
+}
+.theEventText{
+    font-family: Gt-PressuraRegular;
+    font-size: 16px;
+    line-height: 25px;
+}
+/*-------------------------------------------------PROGRAMME--------------------------------------------*/
+.programmeItems{
+    margin-top: 60px;
+    
+    width: 100%;
+    background-color: green;
+}
+.dayOne{
+    
+    
+    height: 48vh;
+    background-color: #151515;
+    
+    
+}
+.dayOneTitle{
+    margin-top: 0px;
+    padding-top: 15vh;
+    font-size: 64px;
+    letter-spacing: -1px;
+    font-family: Gt-PressuraBold;
+    color: white;  
+    text-align: center;
+}
+.dayTwo{
+    
+    height: 48vh;
+    background-color: #f2f2f2;
+}
+.dayTwoTitle{
+    margin-top: 0px;
+    padding-top: 10vh;
+    font-size: 64px;
+    letter-spacing: -1px;
+    font-family: Gt-PressuraBold;
+    color: #151515;  
+    text-align: center;
+}
+.expandiconB{
+    width: 35px;
+    height: auto;
+}
+#dayOneProg{
+    background-color: #151515;
+}
+#dayTwoProg{
+    background-color: #f2f2f2;
+    padding-top: 5vh;
+}
+.tableOne{
+    display: none;
+   
+}
+.tableOneTitle{
+    font-size: 36px; font-family: Gt-PressuraBold;	font-weight: bold;	letter-spacing: -1px;	line-height: 50px; color: #fff; margin-left: 5vw; display: none;
+}
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 90vw;
+    margin-left: 5vw;
+}
+
+table, td, th {
+    border-bottom: 2px solid #848484;
+    
+}
+th{
+    font-size: 21px; font-family: Gt-PressuraBold; 	line-height: 29px;	text-align: center; color: #454545;
+}
+td{
+    	font-family: Gt-PressuraRegular; font-weight: lighter; font-size: 18px;	line-height: 24px; text-align: left; padding-left: 15px;
+}
+/*         daysmenu           */
+/* Sticky */
+.daysMenu {
+    background: #222;
+    height: 80px;
+    width: auto;
+    text-decoration: none;
+    margin-top: 60px;
+    display: none;
+    
+  
+}
+.nav-down{
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+.nav-up {
+    top: 0px;
+}
+
+
+.daysMenu div{
+ 
+  text-align: center;
+  font-family: Gt-PressuraBold;
+  padding-top: 24px;
+  height: 60px;
+  width: 50%;
+  float: left;
+  font-size: 24px;
+    
+ 
+
+}
+.daysMenu div:nth-child(1){
+  box-shadow: 0 3px 50px 0 rgba(0,0,0,0.8);
+  color: white;
+  background-color: #151515;
+  z-index: 11;
+  
+}
+.daysMenu a div:nth-child(2){
+box-shadow: 0 3px 50px 0 rgba(0,0,0,0.8);
+  color: rgba(0,0,0,0.85);
+  background-color: #f2f2f2;
+    z-index: 10;
+  
+}
+/*----------------------------------------------------BLOG--------------------------------------------*/
+.blogs{
+    margin-top: 80px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: auto;
+    
+}
+.blogPost{
+    margin-top: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+}
+.blogImg{
+    height: auto;
+    width: 100%;
+    
+}
+.blogDate{
+    margin-top: 4px;
+    margin-bottom: 0;
+    color: #D0333A;	font-family: Gt-PressuraBold;	font-size: 12px;	line-height: 17px;
+}
+.blogTitle{
+    margin-top: 4px;
+    margin-bottom: 0;
+   color: #fff; font-size: 18px;	font-family: Gt-PressuraBold;	line-height: 22px;
+}
+.blogDescription{
+    margin-top: 4px;
+    margin-bottom: 16px;
+  color: rgba(255,255,255,0.7); font-family: Gt-PressuraRegular;  font-size: 14px;	line-height: 19px;
+}
+.blogText{
+    margin-top: 40px;
+    margin-bottom: 0;
+    color: rgba(255,255,255,0.7); font-weight: 100; font-family: Gt-PressuraRegular;  font-size: 16px;	line-height: 24px;
+}
+.blogQuote{
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-family: Butler; font-weight: 300;	font-size: 25px;	line-height: 35px;	text-align: center; color: #D0333A;}
+.quoteAuthor{
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255,255,255,0.5);	font-family: Gt-PressuraBold;	font-size: 16px;	letter-spacing: 2px;	line-height: 22px;
+}
+
+/* BUTTONS ---------------------- */
+.buttonWrap{
+    text-align: center;
+}
+.olderPosts {
+margin-top: 28px;
+    margin-bottom: 32px;
+height: 45px;	width: 271px;	border: 2px solid #FFFFFF;	border-radius: 20px 0 20px 0;
+background: transparent; color: white; font-family: Gt-PressuraBold; font-size: 16px; letter-spacing: 3px;}
+.olderPosts:hover{
+   color: #D0333A;
+}
+
+
+.backToArticle {
+margin-top: 40px;
+    margin-bottom: 32px;
+height: 45px;	width: 271px;	border: 2px solid #FFFFFF;	border-radius: 20px 0 20px 0;
+background: transparent; color: white; font-family: Gt-PressuraBold; font-size: 16px; letter-spacing: 3px;}
+.backToArticle:hover{
+   color: #D0333A;
+}
+/* social ---------------------- */
+
+.socialIcons{
+    text-align: center;
+    margin-bottom: 80px;
+    }
+.icons{
+    margin: 6px;
+}
+
+/*-------------------------------------------------PODCAST-------------------------------------------*/
+
+.roof{
+    position: fixed;
+    top: -130px;
+    width: 100%;
+    height: auto;
+    
+    
+}
+.sky{
+    position: fixed;
+    top: -95px;
+    width: 100%;
+    height: auto;
+
+    
+}
+.ground{
+    position: fixed;
+    top: -65px;
+    width: 100%;
+    height: auto;
+    
+}
+.parallaxtext{
+    color: #FFFFFF;	font-family: Gt-PressuraRegular;	font-size: 16px;	line-height: 25px;	text-align: center;
+    position: absolute;
+    top: 50vh;
+}
+
+.podcastTitleInfront{
+    top: -250px;
+    margin-left: 40px;
+    position: fixed;
+    font-family: Gt-PressuraBold;
+    font-weight: 900;
+    font-size: 114px;
+    line-height: 100px;
+    color: transparent;
+    letter-spacing: -8px;
+    z-index: 1;
+    
+    
+}
+.podcastNumberInfront{
+    font-size: 94px;
+    color: transparent;
+    width: 100px;
+    letter-spacing: -4px;
+}
+.podcastSpecialPositionInfront{
+    color: #D0333A;
+    
+}
+.podcastTitleBehind{
+    top: -250px;
+    margin-left: 40px;
+    position: fixed;
+    font-family: Gt-PressuraBold;
+    font-weight: 900;
+    font-size: 114px;
+    line-height: 100px;
+    color: white;
+    letter-spacing: -8px;
+    z-index: 1;
+   
+    
+    
+}
+.podcastNumberBehind{
+    font-size: 94px;
+    color: #D0333A;
+    width: 100px;
+    letter-spacing: -4px;
+}
+@media only screen and (max-width: 400px)
+{
+    .podcastTitleInfront{
+        font-size: 86px;
+    }
+    .podcastTitleBehind{
+        font-size: 86px;
+    }
+    .podcastNumberInfront{
+        font-size: 72px;
+        width: 80px;
+    }
+    .podcastNumberBehind{
+        font-size: 72px;
+        width: 80px;
+    }
+}
+.podcastSpecialPositionBehind{
+    color: transparent;
+}
+
+.podcastArea{
+    position: absolute;
+    background-color: #151515;
+    width: 100vw;
+    height: 200vh;
+    top: 64.5vh;
+    
+    
+}
+
+.podcasts{
+    margin-top: 80px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    width: auto;
+    
+}
+.podcastPost{
+    margin-top: 16px;
+    }
+.podcastImg{
+    height: auto;
+    width: 100%;
+    
+}
+
+.podcastDate{
+    width: 70vw;
+    margin-top: 4px;
+    margin-bottom: 0;
+    color: #D0333A;	font-family: Gt-PressuraBold;	font-size: 12px;	line-height: 17px;
+     float: left;
+}
+.podcastTitle{
+    width: 70vw;
+    margin-top: 4px;
+    margin-bottom: 0;
+    margin-right: 0;
+   color: #fff; font-size: 18px;	font-family: Gt-PressuraBold;	line-height: 22px;
+    float: left;
+}
+.podcastDescription{
+    width: 70vw;
+    margin-top: 4px;
+    margin-bottom: 36px;
+    margin-right: 0;
+  color: rgba(255,255,255,0.7); font-family: Gt-PressuraRegular;  font-size: 14px;	line-height: 19px; float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.14);
+    
+}
+.podcastArrow{
+    
+    margin-top: -40px;
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+    float: right;
+    border-bottom: 2px solid #D0333A;
+    border-right: 2px solid #D0333A;
+    transform: rotate(-45deg);
+    
+}
+.soundcloudBtn {
+margin-top: 40px;
+margin-bottom: 32px;
+height: 45px;	width: 271px;	border: 2px solid #000000;	border-radius: 20px 0 20px 0;
+background: transparent; color: #000000; font-family: Gt-PressuraBold; font-size: 16px; letter-spacing: 3px;}
+.soundcloudBtn:hover{
+   color: #D0333A;
+}

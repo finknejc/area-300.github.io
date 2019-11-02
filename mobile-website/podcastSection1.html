@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+ 
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="style.css">
+    
+<title></title>
+       
+  
+  </head>
+ <style>
+     body{
+         background-color: #f2f2f2;
+     }
+    </style>
+<body>
+    
+    <div class="slidemenu">
+        <ul>
+             <li><a class="menuitem" href="index.html">intro</a></li>
+            <li><a class="menuitem inactive">programme</a></li>
+            <li><a class="menuitem active" href="podcast.html">podcast</a></li>
+            <li><a class="menuitem" href="blog.html">blog</a></li>
+        </ul>
+    </div>
+      
+        <section class="header">
+                <a href="index.html"><img class="logo" src="images/Logo.svg"></a>
+                
+                <div class="menu">
+                        <span></span>
+                        <span></span>
+                </div>
+        
+        </section>
+    
+       <section class="podcasts">
+            <div class="podcastPost" style="border-bottom:none;">    
+        <img class="podcastImg" src="images/podcastCover1.png">
+                <h1 class="quoteAuthor" style="color: rgba(0,0,0,0.5);">Glenn Weston</h1>
+                 <h2 class="blogQuote">“The gut feeling is everything you’ve experienced so far.”</h2>
+        <h3 class="blogText" style=" color:#000000; text-align:center;">Today we sat down with creative director of Wunderman, Glenn Weston. We talked about challenge, building your self confidence and rapping. Glenn tells us a valuable insights and lessons of how to approach a company you want to work for and even more.</h3>
+            </div>     
+            
+            
+          
+        <div class="buttonWrap">
+        <a href="https://soundcloud.com/area300/episode-1-glenn-weston"><button class="soundcloudBtn">Soundcloud</button></a>
+        </div>
+            
+    
+       
+
+        </section>
+ 
+
+        <script src="jquery-3.1.1.js"></script>
+        <script src="animation.js"></script>
+
+
+        <script text="text/javascript">
+            $(window).on('load resize',function(){
+        if($(window).width() > 850){
+            //window.location = "./mobile-website/index.html";
+            window.location = "../podcast.html";
+            return;
+        }
+    });
+
+        </script>
+
+</body>
+
+
+</html>
