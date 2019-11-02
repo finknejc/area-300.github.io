@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+ 
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link rel="stylesheet" href="style.css">
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>   
+<title></title>
+       
+  
+  </head>
+ 
+<body style="animation-delay:1.2s;">
+    <div id="loadingScreen" style="">
+        <img class="introgif" src="images/introGif.gif">
+        
+        <h1 class="area300Title">area-300</h1>
+    </div>
+    
+    
+    
+    <section class="navigation">
+        <nav>
+            <ul>
+                <a href="index.html"><span class="logo"><img src="images/Logo.svg"></span></a>
+                <li><a href="subscribe.html" class="tag"><span>.sbscrb</span><span class="borderslide"></span></a></li>
+                
+                
+                
+                <li><a href="about.html" class="tag"><span>.abt</span><span class="borderslide"></span><p class="comingOn">Coming soon</p></a></li>
+                
+                <li><a href="blog.php" class="tag"><span>.blg</span><span class="borderslide"></span></a></li>
+                
+                <li><a href="podcast.html" class="tag"><span>.pdcst</span><span class="borderslide"></span></a>
+                    </li>
+                
+                <li><a href="" class="inactive"><span>.prgrm</span><span class="borderslide"></span><p class="comingOn">7th November</p></a></li>
+                
+                <li><a href="index.html" class="active"><span>.evnt</span><span class="borderslide"></span></a></li>
+               
+            </ul>
+        </nav>
+    </section>
+    
+    <div class="sideleft-info" onclick="copyToClipboard('.mobile')">
+        mobile-45.39.09.75.23
+        <span class="mobile">45 39 09 75 23</span>
+    </div>
+    
+   <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"> 
+    <div class="sideright-info" onclick="copyToClipboard('.emailCopy')">
+        email-area300@gmail.com
+        <span class="emailCopy">area300@gmail.com</span>
+    </div>  
+    </a>
+    
+    <section class="IndexCenter">
+        <h6>area 300</h6>
+        <h1>The Event</h1>
+        <p style="width: 870px;">
+            We are baking an unforgetable experience in our Area 300. We try to help you to connect with local business by challenging yourself. You’ll experience workshops, talks, startup atmosphere and much more with the best people in the industry. To find your calendar invite, important dates and other cool stuff we are cooking under the hood, become a part of the private email list of wickedly awesome people.  </p>
+        
+        <a href="subscribe.html"><input type="button" class="PrimaryButton" value="Subscribe"></a>
+        
+        <p class="sidenote">Sidenote:<span> it is not a goddamn hacketon</span></p>
+        
+    </section>
+    
+   
+<section class="copyright" style="opacity:0;">
+    Created by Lovehandlers 2017
+</section>
+       
+    
+<section class="social">
+
+        <img class="socials" src="images/Snapchat_White.png">
+                    
+    <a href="https://www.instagram.com/areathreehundred/"><img class="socials" src="images/Instagram_White.png"></a>
+                    
+    <a href="https://www.facebook.com/AREA-300-241937652998516/?fref=ts">
+        <img class="socials" src="images/Facebook_White.png">
+                        </a>
+   
+</section>
+            
+            
+
+        
+        <script src="jquery-3.1.1.js"></script>
+        <script src="animation.js"></script>
+    
+<script type="text/javascript">
+  <!--
+  if (screen.width <= 1200) {
+    window.location = "http://www.area300.dk/mobile";
+  }
+  //-->
+    
+    
+    function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  alert("Copied to clipboard - for your convenience");
+}
+
+</script>
+</body>
+</html>

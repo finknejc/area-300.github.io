@@ -1,0 +1,509 @@
+.mobile{position: absolute;
+display: none;}
+.emailCopy{position: absolute;
+display: none;}
+#loadingScreen{
+    position:fixed;z-index: 10; top: 0; left: 0;
+    text-align: center;
+}
+.introgif{
+    height: 100vh; width: 100vw; animation: intro 2s infinite;
+}
+@keyframes intro{
+    0%{filter: brightness(1);}
+    50%{opacity: 1;}
+    70%{filter: brightness(110%);}
+    95%{filter: brightness(500%);}
+    100%{opacity: 0;}
+}
+.area300Title{
+   position: fixed;
+    font-size: 227px;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    width: 100%;
+    animation: glitch 0.5s infinite;
+    top: 30vh;
+}
+/*------------------------------------EveryPage---------------------------------*/
+
+@font-face{
+    font-family: Gt-PressuraBold;
+    src: url(font/GT-Pressura-Mono-Bold.otf)
+}
+@font-face{
+    font-family: Gt-PressuraRegular;
+    src: url(font/GT-Pressura-Mono-Regular.otf);
+}
+@font-face{
+    font-family: Gt-PressuraItalic;
+    src: url(font/GT-Pressura-Mono-Regular-Italic.otf);
+}
+@font-face{
+    font-family: Ailerons;
+    src: url(font/Ailerons.otf);
+}
+@font-face{
+    font-family: Butler;
+    src: url(font/Butler_Regular.otf);
+}
+body{
+    background-image: url(images/background.JPG);
+    
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-color: #151515;
+    filter: blur(0px);
+    animation-name: backgroundimg;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    
+}
+@keyframes backgroundimg{
+    0%{filter: blur(15px);}
+    100%{filter: blur(0px);}
+}
+
+.logo{
+    font-family: Ailerons;
+    font-size: 36px;
+    margin: auto 0;
+    color: #d0333a;
+    
+}
+.navigation{
+    right: 3vw;
+    margin: 3vw;
+    background-color:;
+    
+}
+
+nav ul{
+    list-style-type: none; margin: 0; padding: 0;
+    overflow: hidden;
+    background-color:;
+    
+}
+nav li{
+    float: right;
+    background-color:;
+    
+    font-size: 14px;
+    padding: 16px 15px 16px 15px;
+    
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    font-family: Gt-PressuraRegular;
+    font-weight: light;
+    text-transform: uppercase;
+    transition: all .3s ease-out;
+    
+    
+}
+nav li a:hover{
+    font-family: Gt-PressuraItalic;
+    cursor: pointer;
+    animation:glitch 0.5s infinite;
+    
+}
+@keyframes glitch{
+    0%{text-shadow: 0 0px 0px white;}
+    20%{text-shadow: 2px -2px 0px red;}
+    40%{text-shadow: -2px 2px 0px green;}
+    60%{text-shadow: 2px 2px 0px blue;}
+    80%{text-shadow: -2px -2px 0px green;}
+    100%{ text-shadow: 0px 0px 0px white;}
+}
+
+.borderslide {
+    position: absolute;
+    display:block;
+    left: 0;
+    top:90%;
+    margin:7px auto;
+    height: 2px;
+    background-color: #fff;
+    width: 0%;
+    transition: width 1s ease;
+}
+.tag{
+    position:relative;
+    display:inline-block;
+    transition: all 0.3s ease-out;
+}
+.tag:hover .borderslide {
+    width: 100%;
+}
+.active{
+    font-family: Gt-PressuraItalic;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #fff;
+}
+.inactive{
+    font-family: Gt-PressuraItalic;
+    text-decoration: line-through;
+    text-decoration: -webkit-line-through; 
+    text-decoration: -o-line-through; 
+    text-decoration: -moz-line-through; 
+    
+    
+}
+.inactive:hover .comingOn{
+    opacity: 1;
+    color: #d0333a;
+    transition: 1s ease-in-out;
+    
+}
+.comingOn{
+    opacity: 0;
+    position: absolute;
+    top: 2.5vw;
+    margin-left: 10px;
+    color: #454545;
+}
+
+.sideleft-info{
+    writing-mode: vertical-rl;
+    white-space:nowrap;
+    display:block;
+    float: left;
+    color: #FFFFFF;	font-family: GT-PressuraBold;	font-size: 12px;	font-weight: bold;	letter-spacing: 7px;line-height: 17px;	
+    margin-top: 25vh;
+    margin-left: 2.5vw;
+    transform:  rotate(180deg);
+    
+    background-color:;
+}
+
+.sideright-info{
+    writing-mode: vertical-rl;
+    white-space:nowrap;
+    display:block;
+    float:right;
+    color: #FFFFFF;	font-family: GT-PressuraBold;	font-size: 12px;	font-weight: bold;	letter-spacing: 7px;line-height: 17px;	
+    margin-top: 25vh;
+    margin-right: 2.5vw;
+    transform:  rotate(180deg);
+    
+    background-color:;
+}
+.copyright{
+    position: absolute; font-size: 14px;	font-weight: bold;	letter-spacing: 4px;	line-height: 19px; font-family: Gt-PressuraBold; color: #fff; 
+    left: 2.5vw;
+    bottom: 3.5vw;
+    opacity: 0.5;
+    text-transform: uppercase;
+    background-color:;
+    overflow: hidden;
+    
+    
+}
+.social{
+    position: absolute;
+    right: 2.5vw;
+    bottom: 2.5vw;
+    
+    background-color:;
+    
+}
+h1{
+    margin: 32px;
+    color: #fff;
+    font-family: Ailerons;	font-size: 60px;	line-height: 72px; font-weight: 100;
+    animation: glitch 0.5s;
+    animation-delay: 1.2s;
+}
+h1:hover{
+    animation: glitch 0.5s infinite;
+}
+h2{
+    position: absolute;
+    top:400px;
+    width: 100%;
+    font-family: Ailerons;
+    color: #fff;
+    text-align: left;
+    margin: 30px;
+    font-weight: 100;
+}
+h3{
+    font-family: Gt-PressuraRegular; font-size: 16px;	letter-spacing: 5px;	line-height: 22px; margin-top: 50px; color: rgba(255,255,255,0.7); text-align:  center;
+}
+h6{
+    
+        margin: 0px;
+    	color: #FF365D;	font-family: Gt-PressuraBold;	font-size: 12px;	font-weight: bold;	letter-spacing: 5px;	line-height: 25px; text-transform: uppercase;
+}
+h5{
+        color: #FFFFFF;	font-family: Gt-PressuraRegular;	font-size: 14px;	font-weight: bold;	letter-spacing: 4px;	line-height: 19px;
+}
+h4{
+    position: relative;
+    margin: 10px;
+    color: #FFFFFF;	font-family: Butler; font-weight: 100;font-size: 36px;	line-height: 50px;	text-align: center;}
+
+p{
+    position: relative;
+        color: #FFFFFF;	font-family: Gt-PressuraRegular;	font-size: 14px;	line-height: 25px;	text-align: center;
+    margin: 0 auto; font-weight: 100;
+}
+.PrimaryButton{
+    margin: 40px 10px 40px 10px;
+height: 48px;	width: 161px;	border-radius: 2px;	background-color: #FFFFFF; text-align: center;
+text-decoration: none;
+display: inline-block;
+border: none;
+font-family:Gt-PressuraBold; font-size: 11px;	font-weight: bold; letter-spacing: 2px; color: rgba(0,0,0,0.9); text-transform: uppercase; cursor: pointer;
+}
+.SecondaryButton{
+    margin: 40px;
+height: 48px;	width: 161px;	border-radius: 2px;	background-color:transparent; text-align: center;
+  text-decoration: none;
+display: inline-block;
+border: 1px solid rgba(255,255,255, 0.6);  
+font-family: Gt-PressuraBold; font-size: 11px;	font-weight: bold; letter-spacing: 2px; color: #fff; text-transform: uppercase; cursor: pointer;
+}
+/*------------------------------------INDEX---------------------------------*/
+
+.IndexCenter{
+    margin-top: 18vh;
+    text-align: center;
+    background-color:;
+    
+}
+.sidenote{
+    font-size: 12px;	font-weight: bold;	letter-spacing: 5px;	line-height: 25px;	text-align: center; color: #fff;
+    text-transform: uppercase; font-family: Gt-PressuraBold;
+}
+.sidenote span{
+    font-family: Gt-PressuraRegular; color: #454545;
+}
+
+
+/*----------------------------------PODCAST----------------------------------*/
+
+.podcastLeft{
+    width: 40%;
+    background-color:;
+    display: inline-block;
+    margin-top: 200px; margin-left: 50px; margin-right: 50px;
+    float: left;
+    }
+.podcastRight{
+    width: 37.5%;
+    height: 700px;
+    background-color:;
+    display: inline-block;
+    margin-top: 0px; margin-left: 50px; margin-right: 50px;
+      overflow-x: hidden;
+    overflow-y: scroll;
+    float: right;
+    padding-right: 16px;
+    
+    }
+.podcastRight::-webkit-scrollbar{ 
+  
+    
+}
+.podcastPage{
+ 
+    margin-left: 3vw;
+    text-align: center;
+}
+.podcastimg{
+    width: 100%;
+}
+.podcastimg:hover{
+     animation: noise-3 1s linear infinite;
+}
+
+/*----------------------------------BLOG----------------------------------*/
+.BlogCenter{
+    margin-top: 18vh;
+    text-align: center;
+    background-color:;
+}
+input[type=submit] {
+     margin: 40px 10px 40px 10px;
+height: 48px;	width: 161px;	border-radius: 2px;	background-color: #FFFFFF; text-align: center;
+text-decoration: none;
+display: inline-block;
+border: none;
+font-family:Gt-PressuraBold; font-size: 11px;	font-weight: bold; letter-spacing: 2px; color: rgba(0,0,0,0.9); text-transform: uppercase; cursor: pointer;
+}
+input[type=text] {
+padding-left: 20px;
+margin: 40px 10px 40px 10px;
+height: 48px;	width: 161px;	border: 1px solid rgba(255,255,255,0.3);	border-radius: 2px;
+color: rgba(255,255,255,0.5);	font-family: Gt-PressuraRegular;	font-size: 14px; line-height: 19px;
+background-color: transparent;}
+
+input[type=email] {
+padding-left: 20px;
+margin: 40px 10px 40px 10px;
+height: 48px;	width: 161px;	border: 1px solid rgba(255,255,255,0.3);	border-radius: 2px;
+color: rgba(255,255,255,0.5);	font-family: Gt-PressuraRegular;	font-size: 14px; line-height: 19px;
+background-color: transparent;}
+
+input:focus {
+   
+    border-color:#D0333A;
+    box-shadow: 0 1px 1px #d0333a, inset, 0 0 8px #d0333a;
+    outline: 0 none;
+   
+}
+.mc-field-group{
+    display:inline-block;
+    width: 200px;
+}
+.clear{
+    display: inline-block;
+}
+.blogs{
+    background-image: url(images/Pattern.png);
+    height: 2000px;
+    margin-top: 20vh;
+    text-align: center;
+    background-color: #151515;
+}
+.blogsLeft{
+    margin-bottom: 2000px;
+    position: relative;
+    margin: 4vw;
+    width: 40vw;
+    float: left;
+    
+    
+     
+
+}
+
+
+.blogsRight{
+    position: relative;
+    margin: 4vw;
+    width: 40vw;
+    float: left;
+   
+
+}
+.blogImg{
+    width: 100%;
+    position: relative;
+}
+.ImgOnText{
+    position: relative;
+    top: -300px;
+}
+.dateOnBlogs{
+    text-align: left;
+    position: relative;
+    top: -275px;
+    margin: 30px;
+    width: 100px;
+}
+.blogImg:hover{
+  animation: noise-3 1s linear infinite;
+}
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.5);}
+  43% {opacity: 1; transform: scaleX(10); transform: scaleY(.1); rotate(60deg);}
+}
+
+
+/*----------------------------------BLOG POSTS PAGE----------------------------------*/
+
+.blogPosts{
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+    	background-color: rgba(0,0,0,0.6);	box-shadow: 0 10px 50px 0 rgba(0,0,0,0.2); 	border: 0.5px solid rgba(255,255,255,0.14);}
+}
+.blogPostImg{
+    width: 100%;
+    position: relative;
+    
+}
+.blogPostImg:hover{
+    animation: noise-3 1s linear infinite;
+}
+.blogPostText{
+    max-width: 75ch;
+    padding:35px;
+    margin-top: 50px;
+    text-align: left;
+}
+.buttonWrap{text-align: center;
+margin: 16px;}
+.backToArticle{
+    text-transform: uppercase;
+    margin:  0 auto; height: 48px;
+    width: 900px;	background-color: #151515;	box-shadow: 0 10px 50px 0 rgba(0,0,0,0.2); color: #FFFFFF;	font-family: Helvetica;	font-size: 18px;	letter-spacing: 3px;	line-height: 25px; border: none;
+}
+/*----------------------------------ABOUT PAGE----------------------------------*/
+.AboutPostText{
+    max-width: 75ch;
+    padding:35px;
+    margin-top: 23px;
+    text-align: left;
+}
+
+/*----------------------------------SCROLLBAR------------------------------------*/
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+
+
+#scrolly::-webkit-scrollbar-track{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.4);
+	border-radius: 4px;
+	background-color: transparent;
+    left: 16px;
+}
+
+#scrolly::-webkit-scrollbar
+{
+	width: 8px;
+	border-radius: 4px;
+	background-color: transparent;
+    left: -16px;
+}
+
+#scrolly::-webkit-scrollbar-thumb
+{
+	border-radius: 2px;
+    left: 16px;
+	background-color: #A6292E;
+	background-image: -webkit-linear-gradient(90deg,
+											  transparent,
+											  rgba(0, 0, 0, 0.4) 50%,
+											  transparent,
+											  transparent)
+}
+
+/*----------------------------------SCROLLBAR------------------------------------*/
