@@ -33,7 +33,7 @@
                 
                 <li><a href="about.html" class="tag"><span>.abt</span><span class="borderslide"></span><p class="comingOn">Coming soon</p></a></li>
                 
-                <li><a href="blog.php" class="active"><span>.blg</span><span class="borderslide"></span></a></li>
+                <li><a href="blog_v2.html" class="active"><span>.blg</span><span class="borderslide"></span></a></li>
                 
                 <li><a href="podcast.html" class="tag"><span>.pdcst</span><span class="borderslide"></span></a>
                     </li>
@@ -63,48 +63,7 @@
             
             <p class="dateOnBlogs" style="float:left;top: -25px;">11/11/2018</p>
             <p class="dateOnBlogs" style="text-align:right; float:right;top: -25px;">
-            <?php
-// ENDORA SERVER
-$servername = "mysql74.unoeuro.com";
-$username = "area300_dk";
-$password = "ProjectRufus300";  
-
-                   
-
-
-
-// LOCAL SERVER SETTING
-//$servername = "localhost";
-//$username = "root";
-//$password = "root";   
-    
- 
-                   
-//ENDORA SERVER
-$dbname = "area300_dk_db";
-
-// LOCAL SERVER SETTING
-
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$conn -> set_charset("UTF8");
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-// echo "Connected successfully";   //outcomment when working
-
-
-    mysqli_query($conn,"UPDATE statisticstwo SET value=value+1 WHERE name='hits' LIMIT 1");
-
-    $result = mysqli_query($conn,"SELECT * FROM statisticstwo WHERE name='hits' LIMIT 1");
-    while($row = mysqli_fetch_array($result)) 
-    {
-        echo "Views:".$row['value'];
-    }
-?>
+           
         </p>
         
         <p class="blogPostText">
@@ -137,7 +96,7 @@ The Iphone is staggeringly popular, although it hasn’t really come as much of 
        
     </section>
     <div class="buttonWrap">
-    <a href="blog.php"><button class="backToArticle">
+    <a href="blog_v2.html"><button class="backToArticle">
        < back to article
     </button>
     </div>
@@ -158,11 +117,11 @@ The Iphone is staggeringly popular, although it hasn’t really come as much of 
 
         
    <script type="text/javascript">
-  <!--
+
   if (screen.width <= 1200) {
     window.location = "http://www.area300.dk/mobile/blog.html";
   }
-  //-->
+
 </script>         
         
         

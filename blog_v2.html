@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -35,7 +36,7 @@
                 
                 <li><a href="about.html" class="tag"><span>.abt</span><span class="borderslide"></span><p class="comingOn">Coming soon</p></a></li>
                 
-                <li><a href="blog.php" class="active"><span>.blg</span><span class="borderslide"></span></a></li>
+                <li><a href="blog_v2.html" class="active"><span>.blg</span><span class="borderslide"></span></a></li>
                 
                 <li><a href="podcast.html" class="tag"><span>.pdcst</span><span class="borderslide"></span></a>
                     </li>
@@ -96,52 +97,11 @@
     
     <section id="blogs" class="blogs">
         <section class="blogsLeft">
-            <a style="text-decoration: none;" href="blogPost1.php"><img style="margin-bottom:75px;" class="blogImg" src="images/aerialSchool1.jpg">
+            <a style="text-decoration: none;" href="blogPost1_v2.html"><img style="margin-bottom:75px;" class="blogImg" src="images/aerialSchool1.jpg">
             <h2 class="ImgOnText">Aerial perspective &<br/> it’s issues</h2>
             <p class="dateOnBlogs" style=" float:left;">28/09/2017</p>
             <p class="dateOnBlogs" style="text-align:right; float:right;">
-            <?php
-// ENDORA SERVER
-$servername = "mysql74.unoeuro.com";
-$username = "area300_dk";
-$password = "ProjectRufus300";   
 
-                   
-
-
-
-// LOCAL SERVER SETTING
-//$servername = "localhost";
-//$username = "root";
-//$password = "root";   
-    
- 
-                   
-//ENDORA SERVER
-$dbname = "area300_dk_db";
-
-// LOCAL SERVER SETTING
-
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-$conn -> set_charset("UTF8");
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-// echo "Connected successfully";   //outcomment when working
-
-
-    mysqli_query;
-
-    $result = mysqli_query($conn,"SELECT * FROM statisticstwo WHERE name='hits' LIMIT 1");
-    while($row = mysqli_fetch_array($result)) 
-    {
-        echo "Views:".$row['value'];
-    }
-?>
                 </p>
                 </a>
             <!--
@@ -200,11 +160,11 @@ if (!$conn) {
 
         
   <script type="text/javascript">
-  <!--
+  
   if (screen.width <= 1200) {
     window.location = "http://www.area300.dk/mobile/blog.html";
   }
-  //-->
+
 </script>          
         
         
@@ -212,13 +172,7 @@ if (!$conn) {
         
         <script src="jquery-3.1.1.js"></script>
         <script src="animation.js"></script>
-    <script>
-     var clicks = 0;
-    function clickME() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
- }
-    </script>
+
 </body>
 
 
